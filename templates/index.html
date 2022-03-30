@@ -1,6 +1,57 @@
-<!DOCTYPE>
 <html>
+
 <head>
+    <style>
+        .center {
+            margin: auto;
+            width: 60%;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        .scene {
+            width: 60vw;
+            height: 40vh;
+            perspective: 60vw;
+        }
+        
+        .card {
+            width: 100%;
+            height: 100%;
+            transition: transform 1s;
+            transform-style: preserve-3d;
+            cursor: pointer;
+            position: relative;
+        }
+        
+        .card.is-flipped {
+            transform: rotateX(180deg);
+        }
+        
+        .card__face {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            color: black;
+            text-align: center;
+            font-weight: bold;
+            font-size: 6vh;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
+        
+        .card__face--front {
+            padding-top: 2vh;
+            background: lightgrey;
+        }
+        
+        .card__face--back {
+            /* background: slategrey; */
+            background-image: linear-gradient(to bottom, rgb(94, 103, 112), rgba(0, 0, 0, 0));
+            padding-top: 2vh;
+            transform: rotateX(180deg);
+        }
+    </style>
 </head>
 
 <body>
@@ -17,22 +68,40 @@
     <br>
 
     <div style="text-align:center">
-        <button onclick="window.location.href='/'">Następne pytanie</button>
-    <div>
-    
+
+        <button onclick="window.location.href='/pyk'">Następne pytanie</button>
+
+        <div id="answer" style="display:none;"> {{answer}} </div>
+        <button id="butt_answer" name="answer" onclick="showDiv()"> Show answer </button>
+    </div>
+
+    <div class="center">
+        <p>kliknij fiszkę żeby sprawdzić</p>
+        <div class="scene">
+            <div class="card">
+                <div class="card__face card__face--front">{{question}}</div>
+                <div class="card__face card__face--back">{{answer}}</div>
+            </div>
+        </div>
+    </div>
     <script>
-      function showDiv() {
-        if (document.getElementById('answer').style.display!='block') {
-          document.getElementById('answer').style.display = "block";
-          document.getElementById('butt_answer').innerText = "Schowaj";
-        } else {
-          document.getElementById('answer').style.display = "none";
-          document.getElementById('butt_answer').innerText = "Pokaż";
-        }
-      }
+        var card = document.querySelector('.card');
+        card.addEventListener('click', function() {
+            card.classList.toggle('is-flipped');
+        });
     </script>
 
-    <div id="answer" style="display:none;"> {{answer}} </div>
-    <button id="butt_answer" name="answer" onclick="showDiv()"> Show answer </button>
-    
+    <script>
+        function showDiv() {
+            if (document.getElementById('answer').style.display != 'block') {
+                document.getElementById('answer').style.display = "block";
+                document.getElementById('butt_answer').innerText = "Schowaj";
+            } else {
+                document.getElementById('answer').style.display = "none";
+                document.getElementById('butt_answer').innerText = "Pokaż";
+            }
+        }
+    </script>
+
+
 </html>
