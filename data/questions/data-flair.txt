@@ -1,4 +1,4 @@
-Q.1. What are the key features of Python?
+1. What are the key features of Python?
 
 If it makes for an introductory language to programming, Python must mean something. These are its qualities:
 
