@@ -1,5 +1,6 @@
-1. What are the key features of Python?
+Q.1. What are the key features of Python?
 
+;Ans: 
 If it makes for an introductory language to programming, Python must mean something. These are its qualities:
 
 Interpreted
@@ -9,8 +10,10 @@ Concise and simple
 Free
 Has a large community
 
+
 Q.2. Differentiate between lists and tuples.
 
+;Ans: 
 The major difference is that a list is mutable, but a tuple is immutable. Examples:
 
 >>> mylist=[1,3,3]
@@ -19,7 +22,7 @@ The major difference is that a list is mutable, but a tuple is immutable. Exampl
 >>> mytuple[1]=2
 Traceback (most recent call last):
 
-File “<pyshell#97>”, line 1, in <module>
+File "<pyshell#97>", line 1, in <module>
 
 
 mytuple[1]=2
@@ -28,8 +31,10 @@ TypeError: ‘tuple’ object does not support item assignment
 
 Python Tuples vs Lists – A Detailed Comparison
 
+
 Q.3. Explain the ternary operator in Python.
 
+;Ans: 
 Unlike C++, we don’t have ?: in Python, but we have this:
 
 [on true] if [expression] else [on false]
@@ -46,8 +51,10 @@ Below is how you would use it:
 >>> print("Hi") if a<b else print("Bye")
 Hi
 
+
 Q.4. What are negative indices?
 
+;Ans: 
 Let’s take a list for this.
 
 >>> mylist=[0,1,2,3,4,5,6,7,8]
@@ -61,8 +68,10 @@ This also helps with slicing from the back:
 >>> mylist[-6:-1]
 [3, 4, 5, 6, 7]
 
+
 Q.5. Is Python case-sensitive?
 
+;Ans: 
 A language is case-sensitive if it distinguishes between identifiers like myname and Myname. In other words, it cares about case- lowercase or uppercase. Let’s try this with Python.
 
 
@@ -70,7 +79,7 @@ A language is case-sensitive if it distinguishes between identifiers like myname
 >>> Myname
 Traceback (most recent call last):
 
-File “<pyshell#3>”, line 1, in <module>
+File "<pyshell#3>", line 1, in <module>
 
 Myname
 
@@ -78,8 +87,10 @@ NameError: name ‘Myname’ is not defined
 
 As you can see, this raised a NameError. This means that Python is indeed case-sensitive.
 
+
 Q.6. How long can an identifier be in Python?
 
+;Ans: 
 According to the official Python documentation, an identifier can be of any length. However, PEP 8 suggests that you should limit all lines to a maximum of 79 characters. Also, PEP 20 says ‘readability counts’. So, a very long identifier will violate PEP-8 and PEP-20.
 
 Apart from that, there are certain rules we must follow to name one:
@@ -96,8 +107,10 @@ class	except	global	None	raise	yield
 continue	exec	if	nonlocal	return
 Learn everything about Python Identifiers
 
+
 Q.7. How would you convert a string into lowercase?
 
+;Ans: 
 
 We use the lower() method for this.
 
@@ -133,8 +146,10 @@ Also, istitle() will tell us if a string is in title case.
 >>> 'The Corpse Bride'.istitle()
 True
 
+
 Q.8. What is the pass statement in Python?
 
+;Ans: 
 There may be times in our code when we haven’t decided what to do yet, but we must type something for it to be syntactically correct. In such a case, we use the pass statement.
 
 >>> def func(*args):
@@ -170,8 +185,10 @@ Hope you have read all the basic Python Interview Questions and Answers. Now, le
 Frequently Asked Python Interview Questions and Answers for Freshers
 While solving or answering these questions, if you feel any difficulty, comment us. DataFlair is always ready to help you.
 
+
 Q.9. Explain help() and dir() functions in Python.
 
+;Ans: 
 The help() function displays the documentation string and help for its argument.
 
 >>> import copy
@@ -190,8 +207,10 @@ The dir() function displays all the members of an object(any kind).
 >>> dir(copy.copy)
 [‘__annotations__’, ‘__call__’, ‘__class__’, ‘__closure__’, ‘__code__’, ‘__defaults__’, ‘__delattr__’, ‘__dict__’, ‘__dir__’, ‘__doc__’, ‘__eq__’, ‘__format__’, ‘__ge__’, ‘__get__’, ‘__getattribute__’, ‘__globals__’, ‘__gt__’, ‘__hash__’, ‘__init__’, ‘__init_subclass__’, ‘__kwdefaults__’, ‘__le__’, ‘__lt__’, ‘__module__’, ‘__name__’, ‘__ne__’, ‘__new__’, ‘__qualname__’, ‘__reduce__’, ‘__reduce_ex__’, ‘__repr__’, ‘__setattr__’, ‘__sizeof__’, ‘__str__’, ‘__subclasshook__’]
 
+
 Q.10. How do you get a list of all the keys in a dictionary?
 
+;Ans: 
 Be specific in these type of Python Interview Questions and Answers.
 
 For this, we use the function keys().
@@ -204,8 +223,10 @@ Wait!! Have you developed any Python Project yet?
 
 Practice with Top Python Projects with source code and become job-ready
 
+
 Q.11. What is slicing?
 
+;Ans: 
 Slicing is a technique that allows us to retrieve only a part of a list, tuple, or string. For this, we use the slicing operator [].
 
 >>> (1,2,3,4,5)[2:4]
@@ -218,20 +239,26 @@ Slicing is a technique that allows us to retrieve only a part of a list, tuple, 
 >>> 'Hello'[:-1]
 ‘Hell’
 
+
 Q.12. How would you declare a comment in Python?
 
+;Ans: 
 Unlike languages like C++, Python does not have multiline comments. All it has is octothorpe (#). Anything following a hash is considered a comment, and the interpreter ignores it.
 
 >>> #line 1 of comment
 >>> #line 2 of comment
 In fact, you can place a comment anywhere in your code. You can use it to explain your code.
 
+
 Q.13. How will you check if all characters in a string are alphanumeric?
 
+;Ans: 
 For this, we use the method isalnum().
+
 
 Q.14. How will you capitalize the first letter of a string?
 
+;Ans: 
 Simply using the method capitalize().
 
 >>> 'ayushi'.capitalize()
@@ -275,8 +302,10 @@ True
 >>> '123F'.isdecimal()
 False
 
+
 Q.15. We know Python is all the rage these days. But to be truly accepting of a great technology, you must know its pitfalls as well. Would you like to talk about this?
 
+;Ans: 
 Of course. To be truly yourself, you must be accepting of your flaws. Only then can you move forward to work on them. Python has its flaws too:
 
 Python Interview Question - limitations of Python
@@ -287,8 +316,10 @@ Being dynamically-typed, Python uses duck-typing (If it looks like a duck, it mu
 Python has underdeveloped database access layers. This renders it a less-than-perfect choice for huge database applications.
 And then, well, of course. Being easy makes it addictive. Once a Python-coder, always a Python coder.
 
+
 Q.16. With Python, how do you find out which directory you are currently in?
 
+;Ans: 
 To find this, we use the function/method getcwd(). We import it from the module os.
 
 >>> import os
@@ -305,8 +336,10 @@ We can also change the current working directory with chdir().
 ‘C:\\Users\\lifei\\Desktop’
 
 
+
 Q.17. How do you insert an object at a given index in Python?
 
+;Ans: 
 Let’s build a list first.
 
 >>> a=[1,2,4]
@@ -316,8 +349,10 @@ Now, we use the method insert. The first argument is the index at which to inser
 >>> a
 [1, 2, 3, 4]
 
+
 Q.18. And how do you reverse a list?
 
+;Ans: 
 Using the reverse() method.
 
 >>> a.reverse()
@@ -332,21 +367,27 @@ You can also do it via slicing from right to left:
 
 This gives us the original list because we already reversed it once. However, this does not modify the original list to reverse it.
 
+
 Q.19. What is the Python interpreter prompt?
 
+;Ans: 
 This is the following sign for Python Interpreter:
 
 >>>
 If you have worked with the IDLE, you will see this prompt.
 
+
 Q.20. How does a function return values?
 
+;Ans: 
 A function uses the ‘return’ keyword to return a value. Take a look:
 
 >>> def add(a,b):
 return a+b
+
 Q.21. How would you define a block in Python?
 
+;Ans: 
 
 For any kind of statements, we possibly need to define a block of code under them. However, Python does not support curly braces. This means we must end such statements with colons and then indent the blocks under those with the same amount.
 
@@ -357,16 +398,22 @@ Hello
 
 Goodbye
 
+
 Q.22. Why do we need break and continue in Python?
 
+;Ans: 
 Both break and continue are statements that control flow in Python loops. break stops the current loop from executing further and transfers the control to the next block. continue jumps to the next iteration of the loop without exhausting it.
+
 
 Q.23. Will the do-while loop work if you don’t end it with a semicolon?
 
+;Ans: 
 Trick question! Python does not support an intrinsic do-while loop. Secondly, to terminate do-while loops is a necessity for languages like C++.
+
 
 Q.24. In one line, show us how you’ll get the max alphabetical character from a string.
 
+;Ans: 
 For this, we’ll simply use the max function.
 
 >>> max('flyiNg')
@@ -394,8 +441,10 @@ By this logic, try to explain the following line of code-
 
 (Bonus: } – 125)
 
+
 Q.25. What is Python good for?
 
+;Ans: 
 Python is a jack of many trades, check out Applications of Python to find out more.
 
 Meanwhile, we’ll say we can use it for:
@@ -410,8 +459,10 @@ Database Access
 Network Programming
 Games, 3D Graphics
 Other Python Applications
+
 Q.26. Can you name ten built-in functions in Python and explain each in brief?
 
+;Ans: 
 Ten Built-in Functions, you say? Okay, here you go.
 
 complex()- Creates a complex number.
@@ -465,14 +516,18 @@ open()- Opens a file.
 
 >>> file=open('tabs.txt')
 
+
 Q.27. What will the following code output?
 
+;Ans: 
 >>> word=’abcdefghij’
 >>> word[:3]+word[3:]
 The output is ‘abcdefghij’. The first slice gives us ‘abc’, the next gives us ‘defghij’.
 
+
 Q.28. How will you convert a list into a string?
 
+;Ans: 
 We will use the join() method for this.
 
 >>> nums=['one','two','three','four','five','six','seven']
@@ -480,16 +535,20 @@ We will use the join() method for this.
 >>> s
 ‘one two three four five six seven’
 
+
 Q.29. How will you remove a duplicate element from a list?
 
+;Ans: 
 We can turn it into a set to do that.
 
 >>> list=[1,2,1,3,4,2]
 >>> set(list)
 {1, 2, 3, 4}
 
+
 Q.30. Can you explain the life cycle of a thread?
 
+;Ans: 
 python scripting interview questions
 
 To create a thread, we create a class that we make override the run method of the thread class. Then, we instantiate it.
@@ -500,8 +559,10 @@ When a thread is done waiting or executing, other waiting threads are sent for s
 A running thread that is done executing terminates and is in the dead state.
 
 Basic Python Program Interview Questions and Answers
+
 Q.31. What is a dictionary in Python?
 
+;Ans: 
 A python dictionary is something I have never seen in other languages like C++ or Java programming. It holds key-value pairs.
 
 >>> roots={25:5,16:4,9:3,4:2,1:1}
@@ -517,8 +578,10 @@ A dictionary is mutable, and we can also use a comprehension to create it.
 >>> roots
 {25: 5, 16: 4, 9: 3, 4: 2, 1: 1}
 
+
 Q.32. Explain the //, %, and ** operators in Python.
 
+;Ans: 
 The // operator performs floor division. It will return the integer part of the result on division.
 
 >>> 7//2
@@ -540,8 +603,10 @@ Finally, % is for modulus. This gives us the value left after the highest achiev
 0.5
 
 
+
 Q.33. What do you know about relational operators in Python.
 
+;Ans: 
 Top python interview questions with answers
 
  
@@ -585,8 +650,10 @@ True
 
 You will surely face a question from Python Operators. There are chances that question may be in an indirect way. Prepare yourself for it with the best guide – Python Operators
 
+
 Q.34. What are assignment operators in Python?
 
+;Ans: 
 python coding interview questions
 
 We can combine all arithmetic operators with the assignment symbol.
@@ -620,8 +687,10 @@ We can combine all arithmetic operators with the assignment symbol.
 >>> a
 0.0
 
+
 Q.35. Explain logical operators in Python.
 
+;Ans: 
 We have three logical operators- and, or, not.
 
 >>> False and True
@@ -634,8 +703,10 @@ True
 >>> not 2==2
 False
 
+
 Q.36. What are membership operators?
 
+;Ans: 
 With the operators ‘in’ and ‘not in’, we can confirm if a value is a member in another.
 
 >>> 'me' in 'disappointment'
@@ -644,8 +715,10 @@ True
 >>> 'us' not in 'disappointment'
 True
 
+
 Q.37. Explain identity operators in Python.
 
+;Ans: 
 The operators ‘is’ and ‘is not’ tell us if two values have the same identity.
 
 >>> 10 is '10'
@@ -654,8 +727,10 @@ False
 >>> True is not False
 True
 
+
 Q.38. Finally, tell us about bitwise operators in Python.
 
+;Ans: 
 python interview questions for freshers
 
 These operate on values bit by bit.
@@ -693,8 +768,10 @@ Binary Right-Shift (>>)
 >>> 4>>2
 1
 
+
 Q.39. What data types does Python support?
 
+;Ans: 
 Python provides us with five kinds of data types:
 
 Numbers – Numbers use to hold numerical values.
@@ -716,7 +793,7 @@ Tuples – A tuple, like a list, is an ordered collection of values. The differe
 >>> name[0]='Avery'
 Traceback (most recent call last):
 
-File “<pyshell#129>”, line 1, in <module>
+File "<pyshell#129>", line 1, in <module>
 
 name[0]=’Avery’
 
@@ -740,8 +817,10 @@ We can also use a dictionary comprehension:
 
 Don’t miss the complete guide for Python Data Types and Variables
 
+
 Q.40. What is a docstring?
 
+;Ans: 
 A docstring is a documentation string that we use to explain what a construct does. We place it as the first thing under a function, class, or a method, to describe what it does. We declare a docstring using three sets of single or double-quotes.
 
 >>> def sayhi():
@@ -759,8 +838,10 @@ To get a function’s docstring, we use its __doc__ attribute.
 
 A docstring, unlike a comment, is retained at runtime.
 
+
 Q.41. How would you convert a string into an int in Python?
 
+;Ans: 
 If a string contains only numerical characters, you can convert it into an integer using the int() function.
 
 >>> int('227')
@@ -774,8 +855,10 @@ Let’s check the types:
 >>> type(int('227'))
 <class ‘int’>
 
+
 Q.42. How do you take input in Python?
 
+;Ans: 
 For taking input from the user, we have the function input(). In Python 2, we had another function raw_input().
 
 The input() function takes, as an argument, the text to be displayed for the task:
@@ -808,8 +891,10 @@ Now when we multiply it by 2, we get this:
 >>> a
 14
 
+
 Q.43. What is a function?
 
+;Ans: 
 When we want to execute a sequence of statements, we can give it a name. Let’s define a function to take two numbers and return the greater number.
 
 >>> def greater(a,b):
@@ -817,8 +902,10 @@ return a is a>b else b
 >>> greater(3,3.5)
 3.5
 
+
 Q.44. What is recursion?
 
+;Ans: 
 When a function makes a call to itself, it is termed recursion. But then, in order for it to avoid forming an infinite loop, we must have a base condition.
 
 Let’s take an example.
@@ -829,8 +916,10 @@ return n*facto(n-1)
 >>> facto(4)
 24
 
+
 Q.45. What does the function zip() do?
 
+;Ans: 
 One of the less common functions with beginners, zip() returns an iterator of tuples.
 
 >>> list(zip(['a','b','c'],[1,2,3]))
@@ -841,16 +930,20 @@ Here, it pairs items from the two lists and creates tuples with those. But it do
 >>> list(zip(('a','b','c'),(1,2,3)))
 [(‘a’, 1), (‘b’, 2), (‘c’, 3)]
 
+
 Q.46. How do you calculate the length of a string?
 
+;Ans: 
 This is simple. We call the function len() on the string we want to calculate the length of.
 
 
 >>> len('Ayushi Sharma')
 13
 
+
 Q.47. Explain Python List Comprehension.
 
+;Ans: 
 The list comprehension in python is a way to declare a list in one line of code. Let’s take a look at one such example.
 
 >>> [i for i in range(1,11,2)]
@@ -859,8 +952,10 @@ The list comprehension in python is a way to declare a list in one line of code.
 >>> [i*2 for i in range(1,11,2)]
 [2, 6, 10, 14, 18]
 
+
 Q.48. How do you get all values from a Python dictionary?
 
+;Ans: 
 We saw previously, to get all keys from a dictionary, we make a call to the keys() method. Similarly, for values, we use the method values().
 
 >>> 'd' in {'a':1,'b':2,'c':3,'d':4}.values()
@@ -869,8 +964,10 @@ False
 >>> 4 in {'a':1,'b':2,'c':3,'d':4}.values()
 True
 
+
 Q.49. What if you want to toggle case for a Python string?
 
+;Ans: 
 We have the swapcase() method from the str class to do just that.
 
 >>> 'AyuShi'.swapcase()
@@ -878,23 +975,29 @@ We have the swapcase() method from the str class to do just that.
 
 Let’s apply some concepts now, shall we? Questions 50 through 52 assume the string ‘I love Python’. You need to do the needful.
 
+
 Q.50. Write code to print only upto the letter t.
 
+;Ans: 
 >>> i=0
 >>> while s[i]!='t':
 print(s[i],end=’’)
 i+=1
 I love Py
 
+
 Q.51. Write code to print everything in the string except the spaces.
 
+;Ans: 
 >>> for i in s:
 if i==' ': continue
 print(i,end='')
 IlovePython
 
+
 Q.52. Now, print this string five times in a row.
 
+;Ans: 
 >>> for i in range(6):
 print(s)
 I love Python
@@ -912,8 +1015,10 @@ I love Python
 
 Okay, moving on to more domains to conquer.
 
+
 Q.53. What is the purpose of bytes() in Python?
 
+;Ans: 
 bytes() is a built-in function in Python that returns an immutable bytes object. Let’s take an example.
 
 >>> bytes([2,4,8])
@@ -925,12 +1030,16 @@ b’\x00\x00\x00\x00\x00′
 >>> bytes('world','utf-8')
 b’world’
 
+
 Q.54. What is a control flow statement?
 
+;Ans: 
 A Python program usually starts to execute from the first line. From there, it moves through each statement just once and as soon as it’s done with the last statement, it transactions the program. However, sometimes, we may want to take a more twisted path through the code. Control flow statements let us disturb the normal execution flow of a program and bend it to our will.
+
 
 Q.55. Create a new list to convert the following list of number strings to a list of numbers.
 
+;Ans: 
 nums=[‘22’,’68’,’110’,’89’,’31’,’12’]
 
 We will use the int() function with a list comprehension to convert these strings into integers and put them in a list.
@@ -938,15 +1047,19 @@ We will use the int() function with a list comprehension to convert these string
 >>> [int(i) for i in nums]
 [22, 68, 110, 89, 31, 12]
 
+
 Q.56. Given the first and last names of all employees in your firm, what data type will you use to store it?
 
+;Ans: 
 I can use a dictionary to store that. It would be something like this-
 
 {‘first_name’:’Ayushi’,’second_name’:’Sharma’
 
 Top Python Interview Questions and Answers
+
 Q.57.  How would you work with numbers other than those in the decimal number system?
 
+;Ans: 
 With Python, it is possible to type numbers in binary, octal, and hexadecimal.
 
 Binary numbers are made of 0 and 1. To type in binary, we use the prefix 0b or 0B.
@@ -975,8 +1088,10 @@ Hexadecimal numbers may have digits from 0 to 15. We use the prefix 0x or 0X.
 
 DataFlair’s latest article on Python Numbers with Examples
 
+
 Q.58. What does the following code output?
 
+;Ans: 
 >>> def extendList(val, list=[]):
 list.append(val)
 return list
@@ -992,8 +1107,10 @@ You’d expect the output to be something like this:
 
 Well, this is because the list argument does not initialize to its default value ([]) every time we make a call to the function. Once we define the function, it creates a new list. Then, whenever we call it again without a list argument, it uses the same list. This is because it calculates the expressions in the default arguments when we define the function, not when we call it.
 
+
 Q.59.  How many arguments can the range() function take?
 
+;Ans: 
 The range() function in Python can take up to 3 arguments. Let’s see this one by one.
 
 a. One argument
@@ -1033,12 +1150,16 @@ Here, the first argument is the start value, the second is the stop value, and t
 >>> list(range(9,2,-1))
 [9, 8, 7, 6, 5, 4, 3]
 
+
 Q.60. What is PEP 8?
 
+;Ans: 
 PEP 8 is a coding convention that lets us write more readable code. In other words, it is a set of recommendations.
+
 
 Q.61. How is Python different from Java?
 
+;Ans: 
 Python vs Java - Which is best for Beginners
 
 Following is the comparison of Python vs Java –
@@ -1054,8 +1175,10 @@ Python vs Java, the most commonly asked python interview question for freshers.
 
 Learn it in detail – Python vs Java for Interview
 
+
 Q.62. What is the best code you can write to swap two numbers?
 
+;Ans: 
 I can perform the swapping in one statement.
 
 
@@ -1067,8 +1190,10 @@ Here’s the entire code, though-
 >>> a,b
 (3, 2)
 
+
 Q.63. How can you declare multiple assignments in one statement?
 
+;Ans: 
 This is one of the most asked interview questions for Python freshers –
 
 There are two ways to do this:
@@ -1079,8 +1204,10 @@ First –
 Second – 
 
 >>> a=b=c=3 #This assigns 3 to a, b, and c
+
 Q.64. If you are ever stuck in an infinite loop, how will you break out of it?
 
+;Ans: 
 For this, we press Ctrl+C. This interrupts the execution. Let’s create an infinite loop to demonstrate this.
 
 >>> def counterfunc(n):
@@ -1122,30 +1249,36 @@ while(n==7):print(n)
 
 Traceback (most recent call last):
 
-File “<pyshell#332>”, line 1, in <module>
+File "<pyshell#332>", line 1, in <module>
 
 
 counterfunc(7)
 
-File “<pyshell#331>”, line 2, in counterfunc
+File "<pyshell#331>", line 2, in counterfunc
 
 while(n==7):print(n)
 
 KeyboardInterrupt
 
 Technical Python Interview Questions and Answers
+
 Q.65. How do we execute Python?
 
+;Ans: 
 Python files first compile to bytecode. Then, the host executes them.
 
 Revise the concept of Python Compiler
 
+
 Q.66. Explain Python’s parameter-passing mechanism.
 
+;Ans: 
 To pass its parameters to a function, Python uses pass-by-reference. If you change a parameter within a function, the change reflects in the calling function. This is its default behavior. However, when we pass literal arguments like strings, numbers, or tuples, they pass by value. This is because they are immutable.
+
 
 Q.67. What is the with statement in Python?
 
+;Ans: 
 The with statement in Python ensures that cleanup code is executed when working with unmanaged resources by encapsulating common preparation and cleanup tasks. It may be used to open a file, do something, and then automatically close the file at the end. It may be used to open a database connection, do some processing, then automatically close the connection to ensure resources are closed and available for others. with will cleanup the resources even if an exception is thrown. This statement is like the using statement in C#.
 Consider you put some code in a try block, then in the finally block, you close any resources used. The with statement is like syntactic sugar for that.
 
@@ -1156,13 +1289,17 @@ with expression [as variable]:
 
 >>> with open('data.txt') as data:
 #processing statements
+
 Q.68. How is a .pyc file different from a .py file?
 
+;Ans: 
 While both files hold bytecode, .pyc is the compiled version of a Python file. It has platform-independent bytecode. Hence, we can execute it on any platform that supports the .pyc format. Python automatically generates it to improve performance(in terms of load time, not speed).
 
 Python OOPS Interview Questions and Answers
+
 Q.69. What makes Python object-oriented?
 
+;Ans: 
 Again the frequently asked Python Interview Question
 
 Python is object-oriented because it follows the Object-Oriented programming paradigm. This is a paradigm that revolves around classes and their instances (objects). With this kind of programming, we have the following features:
@@ -1172,8 +1309,10 @@ Abstraction
 Inheritance
 Polymorphism
 Data hiding
+
 Q.70. How many types of objects does Python support?
 
+;Ans: 
 
 Objects in Python are mutable and immutable. Let’s talk about these.
 
@@ -1198,18 +1337,30 @@ Mutable objects – Those that let you modify their contents. Examples of these 
 While two equal immutable objects’ reference variables share the same address, it is possible to create two mutable objects with the same content.
 
 Open-ended Python Interview Questions
+
 Q.71 Why do you want to work for this company?
+
+;Ans: 
 
 Q.72 Where do you see yourself in 10 years?
 
+;Ans: 
+
 Q.73 What will you bring to the table if we hire you?
+
+;Ans: 
 
 Q.74 Tell me about your best personal project. What challenges did you face, and how did it change the way you work?
 
+;Ans: 
+
 Q.75 Would you have a problem with menial tasks?
+
+;Ans: 
 
 Q.76 What makes you like Python over other languages? (The most commonly asked Python interview questions)
 
+;Ans: 
 So, these were some of the important Python Interview Questions and Answers. If you practiced all the above questions then you are ready to move towards the next part of DataFlair’s Python Interview Questions and Answers Series – Part 2 for Python Interviews. I advise you not to miss a single part of this series. All these questions are specifically designed by experienced individuals to provide you with complete help for cracking your next interview.
 
 Start applying for the next Python Interview, you are going to crack it.
@@ -1324,4 +1475,5 @@ This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of S
 Home About us Contact us Terms and Conditions Privacy Policy Disclaimer Write For Us Success Stories
 
 DataFlair © 2022. All Rights Reserved.
+
 

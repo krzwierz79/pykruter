@@ -1,4 +1,3 @@
-from tkinter.ttk import Style
 import requests
 from bs4 import BeautifulSoup
 
