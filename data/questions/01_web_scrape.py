@@ -10,7 +10,7 @@ soup = BeautifulSoup(page.content, "html.parser")
 # p_tags = soup.find_all("p")
 # p_tags = soup.find_all("p", {"style": "text-align: left;"})
 tags = soup.find_all(['h4', 'p'])  # list all needed tags
-for tag in p_tags:
+for tag in tags:
     tag_t = tag.get_text()
     print(tag_t)
 
