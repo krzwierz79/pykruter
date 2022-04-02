@@ -9,9 +9,9 @@ soup = BeautifulSoup(page.content, "html.parser")
 
 # p_tags = soup.find_all("p")
 # p_tags = soup.find_all("p", {"style": "text-align: left;"})
-tags = soup.find_all(['h4', 'p'])  # list all needed tags
+tags = soup.find_all(['h4', 'p'])  # wybiera tagi z html
 for tag in tags:
-    tag_t = tag.get_text()
+    tag_t = tag.get_text()  # wyciąga sam tekst
     print(tag_t)
 
-# scrape.py >> plik.txt
+# uruchomiony z przekierowaniem 01_web_scrape.py > plik.txt zapisuje do pliku zamiast po prostu printować
