@@ -1,0 +1,98 @@
+1. Co to jest enkapsulacja ?
+Jest to ukrywanie widoczności pól danej klasy dla innych. Celem tego jest ochrona danych przechowywanych w tych polach przed niepowołanych lub nieuzacnionym dostępem.
+2. Co to jest polimorfizm ?
+Zapis funkcji (metod) pod różnymi postaściami aby móc obsłużyć różne typy danych przy jednozancznym braku wiedzy o typie tych danych. Wymienia się statyczny oraz dynamiczny
+3. Po co wykorzystuję się dziedziczenie ?
+Dziedziczenie jest dziedziczenie kodu drugiego.  Stosuje się ten aspekt do tworzenia bardzo speckalizowaną klasę. Używa się  aby określony element miał pola i metody drugiej oraz miał dodatkowe swoje pola i metody.
+4. Co to jest metoda abstrakcyjna ?
+Jeżeli klasa, posiada metody abstrakcyjne, oznacza to tyle że, potomstwo jest zmuszone ją nadpisać. Równocześnie klasa taka, nigdy nie powinna być sama w sobie wykorzystana do tworzenia obiektów. 
+6. Co to jest klasa, obiekt, konstruktor metoda ?
+Klasa – pewna część obiektu, w niej definiuje się cechy i zachowania obiektu
+Metoda – wykonuje określone zadania w ramach konkretnej klasy
+metody, czyli funkcje służące do wykonywania na tych danych określonych zadań.
+Obiekt – jest konstruktem klasy, dzięki obiektowi mamy dostęp do określonych pól i metod tej klasy
+Konstruktor – specjalna metoda danej klasy, wywoływana podczas tworzenia jej instancji. Podstawowym zadaniem konstruktora jest zainicjowanie obiektu, a w niektórych językach programowania także utworzenie obiektu.
+7. Jakie są modyfikatory dostępu do klasy ? Podpowiedź są 4 wymień je. ?
+public - publiczne składniki klasy są dostępne dla wszystkich metod wszystkich klas,
+private - składowe prywatne są dostępne tylko dla metod klasy, w której się znajdują,
+protected - dostępne są dla klasy, w której się znajdują oraz dla klas dziedziczących po niej w danej bibliotece,
+internal - składowe wewnętrzne są dostępne dla klasy znajdującej się w danym podzespole (biblioteka, pil *.dll)
+8. Co oznacza zasada single responsibility ?
+Mówi o tym, że nie może istnieć więcej niż jednogo powodu aby istniały klasy lub metody
+9.  	Co to jest SOLID ?
+Pięć zasad programowania obiektowego.
+1.  	Istnie tylko jeden powód dla istnienia klasy
+2.  	Klasy powinny być otwarte na rozrzewnia, ale zamknięte na modyfikację -> zmiana zachowania bez zmiany kodu
+3.  	Klasa potomna nie może rozrzedzać możliwości klasy bazowej a czyli nie może zmieniać co klasa bazowa robiła wczęsniej
+4.  	Powiniścmy tworzyć wiele inferjsów
+5.  	Zależności pomiędzy klasami powinny zależeć od abstrakcji
+10.  Co to jest KISS (CZYLI KEEP IT SIMPLE STUPID) i jak to wytłumaczyć ?
+Podczas programowania powinniśmy kozystać z dostępnych biblotek, innych narzędzi aby nie koplikować programu
+11.  Zasada DRY Czyli DON'T REPEAT YOURSELF wytłumaczyć to zasadę i umieć stosować ?
+Zasada odnosi się do tego aby nie powtarzać kodu w wielu miejscach
+12.  Zasada YAGNI czyli YOU AIN' T GOOD NEED IT potocznie nie stosujemy „przydaśi” jak wyżej, jak to wytłumaczyć ?
+  	Mówi o tym aby nie pisać nie potrzebnego kodu
+13.  Zasada TDA czyli TELL DON'T ASK (Podział obowiązków, hermetyzacja tego to dotyczy) ?
+Obiekty powinny wykonywać operacje na tych danych a nie pytanie o nie
+14.  Zasada SCA czyli SEPARATION OF CONCERNS ?
+Zasada odnosi się do tego, że jedna klasa jest odpowiedzialna za jedno zadanie – odpoiwdzialność za siebie a nie martwienie o inne klasy.
+15.  Ważna jest obsługa wyjątków podczas działania programu. Jak to robimy? Od szczegółu do ogółu przykład chcemy sparsować „12” a jak użytkownik wpiszę „12a” to program się wywali: poleci exception. Jak obsłużyć, żeby program się nie wywalił.
+Napisanie bloku sprawdzającego czy nie wystąpił błąd
+Blok odpowiedzialny za złapanie i wywalenie
+Dalsze działanie programu
+16.  Parsowanie outputu wykorzystanie regular expression? 
+Umieć to wykorzystać. 
+Dobra strona do testowania regular exspresion: https://regex101.com/
+Szukanie określonego wzorca w stringu
+Cel:
+Sprawdzenie poprawności danych, weryfikacja danych
+Uzyskanie określonej informacji
+17.Temat wzorców projektów na przykład singleton jakie ma wady zalety? 
+ale ich jest dużo więcej. Tutaj zajawka na przykład: https://refactoring.guru/pl/design-patterns.
+Ogólna koncepcja, która umożliwia rozwiązanie konkretnego problemu. Jest tylko opisam a nie zestawem konkretnych kroków. Składa się z:
+·    Cel pobieżnie opisuje zarówno problem, jak i rozwiązanie.
+·    Motywacja rozszerza opis problemu i rozwiązania jakie umożliwia dany wzorzec.
+·    Struktura klas ukazuje poszczególne części wzorca i jak są ze sobą powiązane.
+·    Przykład kodu w którymś z popularnych języków programowania pomaga zrozumieć ideę wzorca.
+18. Często skupiamy się na wzorcach projektowych, ale jakie są antywzorce? 
+Javascript na przykład callback hell
+Program , który jest horycznie napisany
+Boskiego Obiektu -> klasay zapchane brak podziału na mniejszcze
+System, który gra i tańczy
+Błotna bryła  chaotycznie uporządkowany, niechlujny system,
+19.Programowanie asynchroniczne co oznacza async await i Promisy w (Javascript) jak programowanie asynchroniczne ma się synchronicznego?
+Równoległe działanie progamu do momentu napotkania błędu
+Await czekanie aby skończyły się inne procesy
+20.  Multi Threading → Wielowątkowość i problemy z tym związane. Na przykład deadlocks, Race Conditions jak temu przeciwdziałać?
+21.  Bazy danych głównie relacyjne i rodzaje relacji? 
+a warto wiedzieć, że są nierelacyjne bazy danych i kiedy to ma zastosowanie.
+Relacyjna baza danych to rodzaj bazy danych, który pozwala przechowywać powiązane ze sobą elementy danych i zapewnia do nich dostęp. Relacyjne bazy danych są oparte na modelu relacyjnym — jest to prosty i intuicyjny sposób przedstawiania danych w tabelach. W relacyjnej bazie danych każdy wiersz tabeli jest rekordem z unikatowym identyfikatorem nazywanym kluczem. Kolumny tabeli zawierają atrybuty danych, a każdy rekord zawiera zwykle wartość dla każdego atrybutu, co ułatwia ustalenie relacji między poszczególnymi elementami rekordu.
+Prosty, ale silny model relacyjny jest używany przez różnego rodzaju i różnej wielkości przedsiębiorstwa do zaspokajania szerokiej gamy potrzeb informacyjnych. Relacyjne bazy danych służą do śledzenia zapasów, przetwarzania transakcji w handlu elektronicznym, zarządzania ogromnymi ilościami kluczowych informacji o klientach itd. Relacyjna baza danych może służyć do zaspokajania dowolnych potrzeb informacyjnych w sytuacjach, w których elementy danych są ze sobą powiązane i muszą być zarządzane w sposób bezpieczny, oparty na regułach i spójny.
+Relacyjne bazy danych istnieją od lat 70-tych XX wieku. Zalety modelu relacyjnego sprawiają, że jest to nadal najszerzej akceptowany model baz danych.
+Rodzaje relacji:
+Jeden do jednego jeden rekord może mieć swój odpowiednik w drugiej bazie
+Wiele do jednego jeden rekord może mieć wiele swoich odpowiedników w drugiej bazie danych
+Wiele do wielu rekordy mogą wzjamnie uzupełniać aby utworzyć takie połącznie należy utworzyć tabelę uzupełnień
+Bazy danych NoSQL (ang. non SQL, non relational, Not Only SQL) – bazy danych, w których można przechowywać, organizować i wyszukiwać dane w inny sposób niż w tabelach relacyjnych znanych z tradycyjnych RDBMS.
+ 
+NoSQL jest przydatny w przypadku danych o dużym wolumenie, które będzie można stosunkowo łatwo skalować horyzontalnie – w klastrach i na wielu serwerach – mowa między innymi o Big Data.
+22. Struktury danych tablica, lista... jakie są różnice?
+Tablica – zapisuje ją całą i ma szybki odczyt
+Lista – zapis elementów, szybrze dodawanie i usuwanie elementów
+23.  Co to jest json ?
+jest prostym formatem wymiany danych. Zapis i odczyt danych w tym formacie jest łatwy do opanowania przez ludzi. Jednocześnie, z łatwością odczytują go i generują komputery.
+Zbiór par nazwa/wartość. W różnych językach jast to implementowane jako obiekt, rekord, struktura, słownik, tabela hash, lista z kluczem, albo tabela asocjacyjna.
+Uporządkowana lista wartości. W większości języków implementuje się to za pomocą tabeli, wektora, listy, lub sekwencji.
+24.  Co to jest tablica asocjacyjna. Co to jest Dictionary ? Czy Dictionary mogą mieć zduplikowane klucze
+tablica asocjacyjna – typ danych, który przechowuje parę (klucz, wartość) np.: w Pytonie jest to słownik, nie może mieć tych samych kluczy
+25.   Co to jest xml, gdzie go stosuje? 
+To bardzo ważny temat!!! Nice to have to korzystanie z YAML
+Xml jezyk znaczników , reprezentuje dane w sposób struktualny;
+YAML – uniwersalny język formalny przeznaczony do reprezentowania różnych danych w ustrukturalizowany sposób.
+26.  Do weba co to jest REST API. Jakie metody wykorzystuje do komunikacji na przykład kiedy POST, a kiedy GET i inne? 
+To jest też bardzo ważne dla web developera.
+API – komunikacja pomiędzy programami
+GET – pobiera dane
+POST – wysła dane do bazy danych
+PUT – aktualizowanie danych
+DELETE – usuwanie danych
