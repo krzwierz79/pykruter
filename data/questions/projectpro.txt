@@ -12,9 +12,9 @@ Matplotlib is the python library used for plotting but it needs lot of fine-tuni
     Scatter_matrix
 10) How can you check if a data set or time series is Random?
 To check whether a dataset is random or not use the lag plot. If the lag plot for the given dataset does not show any structure then it is random.
- 11) Can we create a DataFrame with multiple data types in Python? If yes, how can you do it?
- 12) Is it possible to plot histogram in Pandas without calling Matplotlib? If yes, then write the code to plot the histogram?
- 13) What are the possible ways to load an array from a text data file in Python? How can the efficiency of the code to load data file be improved?
+11) Can we create a DataFrame with multiple data types in Python? If yes, how can you do it?
+12) Is it possible to plot histogram in Pandas without calling Matplotlib? If yes, then write the code to plot the histogram?
+13) What are the possible ways to load an array from a text data file in Python? How can the efficiency of the code to load data file be improved?
    numpy.loadtxt ()
 14) Which is the standard data missing marker used in Pandas?
 NaN
@@ -38,8 +38,8 @@ A package that combines NumPy, SciPy and Matplotlib into a single namespace.
 SciKit-Learn
 27) How can you copy objects in Python?
 The functions used to copy objects in Python are-
-1)  Copy.copy () for shallow copy
-2)  Copy.deepcopy () for deep copy
+1.  Copy.copy () for shallow copy
+2.  Copy.deepcopy () for deep copy
 However, it is not possible to copy all objects in Python using these functions.  For instance, dictionaries have a separate copy method whereas sequences in Python have to be copied by ‘Slicing’.
 28) What is the difference between tuples and lists in Python?
 Tuples can be used as keys for dictionaries i.e. they can be hashed. Lists are mutable whereas tuples are immutable - they cannot be changed. Tuples should be used when the order of elements in a sequence matters. For example, set of actions that need to be executed in sequence, geographic locations or list of points on a specific route.
@@ -69,10 +69,10 @@ Answer: print ‘word’._len_ ()
 Monkey patching is a technique that helps the programmer to modify or extend other code at runtime. Monkey patching comes handy in testing but it is not a good practice to use it in production environment as debugging the code could become difficult.
 40) Which tool in Python will you use to find bugs if any?
 Pylint and Pychecker. Pylint verifies that a module satisfies all the coding standards or not. Pychecker is a static analysis tool that helps find out bugs in the course code.
- 41) How are arguments passed in Python- by reference or by value?
+41) How are arguments passed in Python- by reference or by value?
 The answer to this question is neither of these because passing semantics in Python are completely different. In all cases, Python passes arguments by value where all values are references to objects.
 42) You are given a list of N numbers. Create a single list comprehension in Python to create a new list that contains only those values which have even numbers from elements of the list at even indices. For instance if list[4] has an even value the it has be included in the new output list because it has an even index but if list[5] has an even value it should not be included in the list because it is not at an even index.
- [x for x in list [1::2] if x%2 == 0]
+[x for x in list [1::2] if x%2 == 0]
 The above code will take all the numbers present at even indices and then discard the odd numbers.
 43) Explain the usage of decorators.
 Decorators in Python are used to modify or inject code in functions or classes. Using decorators, you can wrap a class or function method call so that a piece of code can be executed before or after the execution of the original code. Decorators can be used to check for permissions, modify or track the arguments passed to a method, logging the calls to a specific method, etc.
@@ -186,12 +186,6 @@ def f1_score(tp, fp, fn, tn):  p =  tp / (tp + fp)   r = tp / (tp + fn)  re
 17) Using sklearn library, how will you implement lasso regression?
 >>> from sklearn import linear_model>>>reg = linear_model.LinearRegression()>>> reg = linear_model.Lasso(alpha=0.4)>>> reg.fit(sample_dataset)
 Covariance for variables that have large deviations from the mean would become large but the variables could still be related to each other. Correlation is thus a better metric than covariance for it divides out the standard deviations of the variables. 
-If we want to write a code in Python, and we are not sure whether it is error-free or not, then we can use try-except-finally in Python. 
- 
+If we want to write a code in Python, and we are not sure whether it is error-free or not, then we can use try-except-finally in Python.  
 So far, most programming languages didn’t allow negative indexing and Python is one of those rare languages which supports that. Negative indexing means that one can use negative numbers to access the elements of an array. But, the key point to remember is that the index -1 represents the last element of the array, -2 represents the second last element of the array and so on. Thus, in negative indexing, the counting starts from where the array ends.
- 
 The following python interview questions are a must for a Data Analyst 
- 
-PREVIOUS
- 
- 
