@@ -23,6 +23,7 @@ def get_qa(file):
                 qa.append([line[6:], "", category])
             # pozostałe linie (odpowiedzi)
             else:
+                # qa[do poprzedniego indeksu (pytania)][na indeks 1 ("")] += dopisz aktualną linię
                 qa[-1][1] += line
         # print(qa[:2])
 
